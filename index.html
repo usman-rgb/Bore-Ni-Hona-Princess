@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noor Shehzadi Jind ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Background Particles -->
+        <canvas id="particle-canvas"></canvas>
+
+        <!-- Question Screen -->
+        <div id="question" class="screen active">
+            <div class="container">
+                <h1>Arre Noor Shehzadi Jind... 😍</h1>
+                <h2>Kya Aap Mujhse Pyar Karti Hain? ❤️</h2>
+                <p>(Bore Ho Rahi Thi Na? Ab Haso Aur Jawab Do! 😜)</p>
+                <div class="buttons">
+                    <button id="yesBtn" class="btn yes-btn">Haan Yaar! ❤️</button>
+                    <button id="noBtn" class="btn no-btn">Nahi... 😏</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 1 -->
+        <div id="page1" class="screen romantic-page">
+            <div class="romantic-container">
+                <h1 class="main-title">Thank You Meri Shehzadi! 🥰❤️</h1>
+                <canvas class="heart-flower-canvas" data-page="1"></canvas>
+                <div class="scrollable-content" data-page="1">
+                    <p class="intro">Noor Shehzadi Jind,</p>
+                    <p>Aap Mera Woh Sapna Hain Jo Har Roz Sach Hota Hai. 🌸</p>
+                    <p>Har Bore Din Mein Bhi Aap Hain Toh Maza Aata Hai... <br>Kyunki Aapke Saath "Bore" Word Hi Delete Ho Jata Hai! 😂💕</p>
+                    <p>Aapke Bina Dil Nahi Lagta, Aur Aapke Saath Har Pal Jannat Hai. 😘</p>
+                    <p>Main Aapse Bohot Bohot Pyar Karta Hoon... <br>Itna Ki Code Mein Bhi Error Aane Lagta Hai Jab Aap Online Nahi Hoti! 🤭💻</p>
+                    <p>Har Baar Jab Aap Hasti Hain, Mera Dil Automatically Debug Ho Jata Hai. ❤️</p>
+                    <p>Aap Meri Favorite Notification Hain – Ding! Dil Khush! 🔔😍</p>
+                    <p>Sardiyaan Hain... Kambal Se Bahar Mat Nikalna Warna Bukhar Ho Jayega! Phir Main Dawai Aur Soup Leke Aaunga, Lekin Has Has Ke Thak Jaunga! 😂🛌</p>
+                    <p>Jab University Jaya Karo Toh Car Mein Sheeshe Wali Side Pe Mat Baithna... Warna Hawa Ke Saath Udd Jayegi Itni Dubli Patli Hain! Phir Main Kahan Dhundunga Meri Jind Ko? 😜🚗</p>
+                    <p>Promise: Har Bore Moment Ko Main Funny Bana Dunga, Aur Har Din Ko Special! ✨</p>
+                    <p>Forever Yours, Meri Piyari Si Masoom Si Shehzadi... 💞🏰</p>
+                </div>
+                <div class="button-container">
+                    <button class="nav-btn next-btn" data-next="page2">Next Page ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div id="page2" class="screen romantic-page">
+            <div class="romantic-container">
+                <h1 class="main-title">Aap Aur Main Ki Funny Baatein 😜</h1>
+                <canvas class="heart-flower-canvas" data-page="2"></canvas>
+                <div class="scrollable-content" data-page="2">
+                    <p class="intro">Meri Cute Shehzadi,</p>
+                    <p>Jab Aap Message Karti Hain "Khaana Kha Liya?" Toh Mera Dil Reply Karta Hai – "Abhi Nahi, Aapka Intezaar Kar Raha Tha!" 🍛❤️</p>
+                    <p>Aapki Ek Smile Se Mera Pura Din Charge Ho Jata Hai, Jaise Phone 0% Se 100%! 🔋😍</p>
+                    <p>Main Aap Ko Itna Miss Karta Hoon Ki Google Bhi Poochne Leta Hai – "Noor Ko Miss Kar Rahe Ho Kiya?" 😂</p>
+                    <p>Jab Aap Gussa Karti Hain Na, Tab Bhi Bohot Pyari Lagti Hain... Lekin Phir Bhi Sorry Bol Deta Hoon Kyuki Darr Lagta Hai! 😭💕</p>
+                    <p>Aapke Saath Time Itni Jaldi Guzar Jata Hai Ki Alarm Clock Bhi Jealous Ho Jata Hai! ⏰</p>
+                </div>
+                <div class="button-container">
+                    <button class="nav-btn back-btn" data-prev="page1">← Back</button>
+                    <button class="nav-btn next-btn" data-next="page3">Next Page ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3 -->
+        <div id="page3" class="screen romantic-page">
+            <div class="romantic-container">
+                <h1 class="main-title">Aap Meri Wajah Ho... 🥰</h1>
+                <canvas class="heart-flower-canvas" data-page="3"></canvas>
+                <div class="scrollable-content" data-page="3">
+                    <p class="intro">Meri Jind Jan,</p>
+                    <p>Aap Meri Subah Ki Pehli Khushi Aur Raat Ki Aakhri Dua Hain. 🌙✨</p>
+                    <p>Aapke Bina Chai Bhi Kadwi Lagti Hai, Aur Aapke Saath Pani Bhi Meetha! ☕💕</p>
+                    <p>Main Aapse Itna Pyar Karta Hoon Ki Dictionary Mein Bhi "Love" Ke Saamne Aapki Photo Lagani Chahiye! 📖❤️</p>
+                    <p>Jab Aap Hasti Hain Toh Lagta Hai Pura Universe Smile Kar Raha Hai. 🌍😊</p>
+                    <p>Har Pal Aapke Saath Bitana Chahta Hoon... Even Traffic Jam Mein Bhi! 🚗😂</p>
+                </div>
+                <div class="button-container">
+                    <button class="nav-btn back-btn" data-prev="page2">← Back</button>
+                    <button class="nav-btn next-btn" data-next="page4">Next Page ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 4 -->
+        <div id="page4" class="screen romantic-page">
+            <div class="romantic-container">
+                <h1 class="main-title">Wade Aapse Sirf Main Nibhaunga 😤❤️</h1>
+                <canvas class="heart-flower-canvas" data-page="4"></canvas>
+                <div class="scrollable-content" data-page="4">
+                    <p class="intro">Meri Princess,</p>
+                    <p>Main Wada Karta Hoon – Jab Aap Bimar Hongi, Main Hasaunga (Dawai Ke Saath)! 💊😂</p>
+                    <p>Aapki Har Shopping List Poori Karunga... Budget Allow Kare Toh! 🛍️😜</p>
+                    <p>Aapke Saath Har Movie Dekhunga... Even Woh 3 Ghante Wali Boring Wali Bhi! 🎬</p>
+                    <p>Jab Aap Thak Jayengi, Main Piggyback Dunga... Gym Join Karna Padega Ab! 🏋️‍♂️💕</p>
+                    <p>Aur Sabse Bada Wada – Hamesha Aapko Priority Dunga, Even Phone Ki Low Battery Mein Bhi! 🔋❤️</p>
+                </div>
+                <div class="button-container">
+                    <button class="nav-btn back-btn" data-prev="page3">← Back</button>
+                    <button class="nav-btn next-btn" data-next="page5">Next Page ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 5 -->
+        <div id="page5" class="screen romantic-page">
+            <div class="romantic-container">
+                <h1 class="main-title">Forever & Always Aapki ❤️</h1>
+                <canvas class="heart-flower-canvas" data-page="5"></canvas>
+                <div class="scrollable-content" data-page="5">
+                    <p class="intro">Noor Shehzadi Jind,</p>
+                    <p>Ye Saari Baatein, Ye Saare Pages, Ye Saara Pyar... Sab Aapke Liye Hai.</p>
+                    <p>Aap Meri Zindagi Ka Sabse Khubsurat Chapter Hain, Aur Main Chahta Hoon Ye Book Kabhi Khatam Na Ho. 📖💞</p>
+                    <p>Thank You For Being My Everything.</p>
+                    <p>Main Aapse Hamesha Pyar Karunga... Bohot Saara, Beshumaar, Forever Wala Pyar! 🌹❤️</p>
+                </div>
+                <div class="button-container">
+                    <button class="nav-btn back-btn" data-prev="page4">← Back</button>
+                    <button class="nav-btn next-btn" data-next="page6">Next Page ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 6 -->
+        <div id="page6" class="screen romantic-page">
+            <div class="romantic-container">
+                <h1 class="main-title">Aapko Miss Karne Ke Side Effects 😭😂</h1>
+                <canvas class="heart-flower-canvas" data-page="6"></canvas>
+                <div class="scrollable-content" data-page="6">
+                    <p class="intro">Meri Guriya,</p>
+                    <p>Aapke Bina Mera Phone Bhi Depress Ho Jata Hai – Notification Nahi Aata Toh Khud Lock Kar Leta Hai! 📴</p>
+                    <p>Main Aapko Itna Miss Karta Hoon Ki Chai Bhi Thandi Reh Jati Hai... Kyunki Aap Nahi Hain Saath Pine Ko! ☕😢</p>
+                    <p>Friends Kehte Hain "Bhai Smile Kar" – Main Kehta Hoon "Noor Online Nahi Hai, Kaise Karun?" 😅</p>
+                    <p>Aap Jab "Seen" Kar Deti Hain Aur Reply Nahi Karti... Toh Dil Dar Sa Jata Hai Khy Meri Jind Ne Mujhe Messege Kiyun ni Kiya! Phr Sochta Hn Khy Meri Shehzadi Toh Pakistan Ki Prime Minister Lagi Hoi Hai 💥😂</p>
+                    <p>Aap Meri Woh Addiction Hain Jise Chhodne Ki Koshish Nahi Kar Sakta! 🚭❤️</p>
+                </div>
+                <div class="button-container">
+                    <button class="nav-btn back-btn" data-prev="page5">← Back</button>
+                    <button class="nav-btn next-btn" data-next="page7">Next Page ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 7 -->
+        <div id="page7" class="screen romantic-page">
+            <div class="romantic-container">
+                <h1 class="main-title">Aap Itni Cute Kyun Hain? 😍🤪</h1>
+                <canvas class="heart-flower-canvas" data-page="7"></canvas>
+                <div class="scrollable-content" data-page="7">
+                    <p class="intro">Meri Ladli Shehzadi Jind,</p>
+                    <p>Aap Itni Sweet Hain Ki Dentist Ne Bill Bhej Diya – "Daant Kharaab Karne Ka Charge!" 🦷😂</p>
+                    <p>Pta Hai Princess! Hum Nikah Ke Bad Inn Sha Allah Hajj aur Umrah Pr Chale Ge Aur Allah Pak Ka Shukar Ada Karain Ge Khy Allah Pak Ne Hamain Sath Milaya Aur Ik Pakeeza Rishta Nikah Main Jor Diya 📏❤️</p>
+                    <p>Princess Ap Mere Liye Allah Pak Ka Atta Kar Dah Anmol Tohfa Hain Jo Mujhe Sab Se Ziyadah Aziz Hai 🪞</p>
+                    <p>Aap Jab Soti Hain Toh Chand Sharma Kar Chhup Jata Hai... Kyunki Aap Zyada Chamak Rahi Hoti Hain! 🌙✨</p>
+                    <p>Princess! Jab Hamara Inn Sha Allah Nikah Ho Jai Ga Toh Main Apki Family Main Apke Sath Bethn Ga Aur Apko Sharmate Hoiy Dekhn Ga Aur Apko Uthne Bhii Nii Doon Ga Phr Apko Blushing Karta Hoa Dekhn Ga Meri Hansii Nikal Janii Hai Apko Sharmata Dekh Kar HaHaHa</p>
+                </div>
+                <div class="button-container">
+                    <button class="nav-btn back-btn" data-prev="page6">← Back</button>
+                    <button class="nav-btn next-btn" data-next="page8">Next Page ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 8 -->
+        <div id="page8" class="screen romantic-page">
+            <div class="romantic-container">
+                <h1 class="main-title">Future Mein Sirf Masti 😈❤️</h1>
+                <canvas class="heart-flower-canvas" data-page="8"></canvas>
+                <div class="scrollable-content" data-page="8">
+                    <p class="intro">Mera Sohnra Yar </p>
+                    <p>Future Mein Ghar Ka Rule – TV Remote Sirf Aapke Paas, Main Mobile Pe Reel Dekh Lunga! 📺😂</p>
+                    <p>Har Sunday Long Drive... Aap Gaadi Chalayengi, Main Galat Directions Batata Rahunga! 🗺️😜</p>
+                    <p>Aur Jab Ap Gaadi Chalayengi Toh Main Apko Dekhta Rahn Ga aur Dil Hii Dil Main Allah Pak Ka Shukar Adda Karta Rahn Ga Khy Mujhe Itna Ziyadah Piyarii Aur Haseen Sii Guriya Atta Karne Ke Liye 🎭</p>
+                    <p>Aur Sara Din Ghr Main Rahn Ga Aur Apke Sath Kitchen Main Kam Karwaon Ga, Apkii Piyarii Piyarii Baten Suno Ga Aur Apko Dher Sarii Mohabbat Dn Ga❤️</p>
+                    <p>Princess! Main Apka Inn Sha Allah Dher Sara Khiyal Rakhunga, Apko Rozana Gajre Pehnauga Apne Hath Se, Apke Bal Bnauga aur Apke Sath Beth Kar Chai Piyun Ga Apke Hath Kii Banii Hoi💕</p>
+                </div>
+                <div class="button-container">
+                    <button class="nav-btn back-btn" data-prev="page7">← Back</button>
+                    <button class="nav-btn next-btn" data-next="page9">Next Page ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 9 -->
+        <div id="page9" class="screen romantic-page">
+            <div class="romantic-container">
+                <h1 class="main-title">Aap Meri Superpower Hain ⚡😍</h1>
+                <canvas class="heart-flower-canvas" data-page="9"></canvas>
+                <div class="scrollable-content" data-page="9">
+                    <p class="intro">Usman Ki Jaan</p>
+                    <p>Aapke Message Se Mera Mood 0 Se 100 Ho Jata Hai – Faster Than Flash! ⚡</p>
+                    <p>Aap Jab Call Karti Hain Toh Battery Khud Charge Hone Lagti Hai! 🔋😂</p>
+                    <p>Main Aapke Liye Kuch Bhi Kar Sakta Hoon... Even Subah 8 Baje Uth Sakta Hoon! ☀️ (Ye Superpower Hai)</p>
+                    <p>Aapki Smile Se Mera Din Bright Ho Jata Hai... Bulb Ki Zarurat Nahi! 💡</p>
+                    <p>Princess! Mere Dil Ki Wish Hai Khy Main Apke Sath Tahajud Ki Namaz Parhn Aur Apke Hath Ko Le Kar Uss Pr Ik Mohabbat Bhara Bosa Dn Aur Apke Mathy Pr Bhii Ik Mohabbat Bhara Bosa Dn. Inn Sha Allah❤️</p>
+                </div>
+                <div class="button-container">
+                    <button class="nav-btn back-btn" data-prev="page8">← Back</button>
+                    <button class="nav-btn next-btn" data-next="page10">Next Page ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 10 - Grand Final -->
+        <div id="page10" class="screen romantic-page">
+            <div class="romantic-container">
+                <h1 class="main-title">The End Nahi, Beginning Hai ❤️</h1>
+                <canvas class="heart-flower-canvas" data-page="10"></canvas>
+                <div class="scrollable-content" data-page="10">
+                    <p class="intro">Noor Usman</p>
+                    <p>Ye 10 Pages, Ye Saari Funny Baatein, Ye Dil Se Nikla Har Lafz... Sab Aapke Liye Hai.</p>
+                    <p>Aapne Meri Zindagi Mein Itni Hasi Aur Pyar Bhara Hai Ki Lafz Kam Pad Jaate Hain.</p>
+                    <p>Thank You For Being My Best Friend, My Love, My Everything.</p>
+                    <p>Main Aapse Hamesha Mohabbat Karunga... Har Din, Har Pal, Har Saans Ke Saath!</p>
+                    <p class="intro" style="margin-top: 80px; font-size: 3em;">Forever & Always Yours ❤️</p>
+                    <p style="font-size: 2em; margin-top: 40px;">- Aapka Usman 😘</p>
+                </div>
+                <div class="button-container">
+                    <button class="nav-btn back-btn" data-prev="page9">← Back</button>
+                    <button class="nav-btn" style="background: linear-gradient(45deg, #d81b60, #ff4081);">The End 💕</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
